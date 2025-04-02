@@ -1,0 +1,114 @@
+/* CAD Viewer Styles */
+.cad-container {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color: #f5f5f5;
+    border-radius: 0.375rem;
+    overflow: hidden;
+  }
+  
+  #cad-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+  }
+  
+  /* Toolbar Styles */
+  .adsk-viewing-viewer .adsk-button {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+  }
+  
+  .adsk-viewing-viewer .adsk-button:hover {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+  }
+  
+  /* Layer Panel Styles */
+  #layer-selector {
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .cad-container {
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .cad-container {
+      height: 300px;
+    }
+  }
+  
+  /* Loading Animation */
+  .loading-animation {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .loading-animation div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  
+  .loading-animation div:nth-child(1) {
+    left: 8px;
+    animation: loading-animation1 0.6s infinite;
+  }
+  
+  .loading-animation div:nth-child(2) {
+    left: 8px;
+    animation: loading-animation2 0.6s infinite;
+  }
+  
+  .loading-animation div:nth-child(3) {
+    left: 32px;
+    animation: loading-animation2 0.6s infinite;
+  }
+  
+  .loading-animation div:nth-child(4) {
+    left: 56px;
+    animation: loading-animation3 0.6s infinite;
+  }
+  
+  @keyframes loading-animation1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes loading-animation3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  
+  @keyframes loading-animation2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
+  
