@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const projectFiles = {
       apartamento_contemporaneo: {
         name: "Apartamento Contemporâneo",
-        file: "assets/project/cad/FabioeCecilia.dwg",
+        file: "assets/project/cad/apartamento_contemporaneo.dwg",
       },
       escritorio_corporativo: {
         name: "Escritório Corporativo",
