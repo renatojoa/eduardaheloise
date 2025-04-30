@@ -1,0 +1,11 @@
+exclude:
+  - node_modules
+  - server/node_modules
+  - "*/node_modules"
+  - package.json
+  - package-lock.json
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
